@@ -36,7 +36,7 @@
     {% block toolbar_columes %}
     <div class="btn-group">
       <a class="dropdown-toggle btn btn-default btn-sm" data-toggle="dropdown" href="#">
-        <i class="icon-list-alt"></i> {% trans "Columns" %} <span class="caret"></span>
+       <i class="fa fa-list-alt"></i> {% trans "Columns" %} <span class="caret"></span> 
       </a>
       <ul class="dropdown-menu model_fields pull-right" role="menu" aria-labelledby="dLabel">
         <li><a href="{{clean_select_field_url}}"><i class="icon-refresh"></i> {% trans "Restore Selected" %}</a></li>
@@ -51,12 +51,12 @@
     {% endblock toolbar_columes %}
     {% block toolbar_layouts %}
     <div class="btn-group layout-btns" data-toggle="buttons">
-      <label class="btn btn-default btn-sm layout-normal active">
+      <!---label class="btn btn-default btn-sm layout-normal active">
         <input type="radio"> <i class="icon-th-large"></i>
-      </label>
-      <label class="btn btn-default btn-sm layout-condensed">
+      </label-->
+    <!--  <label class="btn btn-default btn-sm layout-condensed">
         <input type="radio"> <i class="icon-th"></i>
-      </label>
+      </label-->
       {% view_block 'top_layout_btns' %}
     </div>
     {% endblock toolbar_layouts %}
@@ -78,13 +78,13 @@
   <div class="results table-responsive">
   {% if results %}
   {% block results_grid %}
-  <table class="table table-bordered table-striped table-hover">
+  <table class="table table-bordered table-striped">
     {% block results_grid_head %}
     <thead>
       <tr>{% for o in result_headers.cells %}
         <th {{o.tagattrs}}>
           {% if o.btns %}
-            <div class="pull-right">
+            <div class="pull-">
               {% for b in o.btns %}
                 {{b|safe}}
               {% endfor %}

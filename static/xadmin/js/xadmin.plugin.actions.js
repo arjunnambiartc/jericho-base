@@ -104,7 +104,7 @@
         acrossQuestions: "div.form-actions .question",
         acrossClears: "div.form-actions .clear",
         allToggle: "#action-toggle",
-        selectedClass: "warning"
+        selectedClass: "info"
     }
 
     $.do_action = function(name){

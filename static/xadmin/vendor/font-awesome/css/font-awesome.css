@@ -142,7 +142,7 @@ a [class*=" icon-"] {
   border-radius: 7px;
 }
 .pull-right {
-  float: right;
+  float: initial;
 }
 .pull-left {
   float: left;

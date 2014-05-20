@@ -1,4 +1,3 @@
-
 a { cursor: pointer;}
 
 #body-content {
@@ -15,6 +14,7 @@ a { cursor: pointer;}
   max-width: none;
   left: 100%;
 }
+
 .dropdown-submenu .popover.right {
   margin-top: -35px;
   margin-left: -10px;
@@ -171,6 +171,11 @@ a { cursor: pointer;}
 .table td .btn-group {
   font-size: 13px;
 }
+
+.table td {
+  white-space: nowrap;
+}
+
 
 .content-toolbar, .steps-nav {
   margin-bottom: 10px;

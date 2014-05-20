@@ -275,6 +275,10 @@ table {
   .table th {
     background-color: #fff !important;
   }
+  .table td,
+  .table th {
+    min-width: 129px;
+  }
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
@@ -306,7 +310,7 @@ html {
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
@@ -1640,7 +1644,7 @@ th {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  padding: 8px;
+  padding: 5px;
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #dddddd;
@@ -1752,6 +1756,29 @@ table th[class*="col-"] {
 .table-hover > tbody > tr.success:hover > th {
   background-color: #d0e9c6;
 }
+
+.table > thead > tr > td.info,
+.table > tbody > tr > td.info,
+.table > tfoot > tr > td.info,
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+  background-color: #c4e3f3;
+}
+
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr.info:hover > th {
+  background-color: #c4e3f3;
+}
+
 
 .table > thead > tr > td.danger,
 .table > tbody > tr > td.danger,
@@ -2254,6 +2281,18 @@ textarea.input-lg {
        -o-user-select: none;
           user-select: none;
 }
+
+/* My custom class */
+
+.btn.btn-primary.btn-sm.btn-ajax.pull-right {
+    float: right;
+}
+
+.btn.btn-danger.deletelink.pull-right.hide-xs {
+    float: right;
+}
+
+/*end of custom classes */
 
 .btn:focus {
   outline: thin dotted #333;
@@ -6598,9 +6637,9 @@ button.close {
   margin-left: auto;
 }
 
-.pull-right {
-  float: right !important;
-}
+/*.pull-right {
+ * float: right !important;
+}*/
 
 .pull-left {
   float: left !important;
